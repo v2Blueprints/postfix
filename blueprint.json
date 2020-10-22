@@ -1,0 +1,25 @@
+{
+	"title": "postfix",
+	"description": "postfix base",
+	"configuration": {
+	  "DEBIAN_FRONTEND" : "noninteractive",
+	  "default_domain": "^^domain_name^^"
+	},
+"os_packages": [
+	{
+		"type": "debian",
+		"name": "postfix"
+	}
+],
+"images": [
+	{
+		"type": "lxd",
+		"image": "images/debian/stretch/cloud"
+	}
+],
+"containers": [
+	{
+		"type": "lxd"
+	}
+]
+}
