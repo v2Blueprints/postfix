@@ -2,7 +2,6 @@
 	"title": "postfix",
 	"description": "postfix base",
 	"configuration": {
-	  "DEBIAN_FRONTEND" : "noninteractive",
 	  "default_domain": "^^domain_name^^"
 	},
 "os_packages": [
@@ -14,7 +13,7 @@
 "images": [
 	{
 		"type": "lxd",
-		"image": "images/debian/stretch/cloud"
+		"image": "enginesd_debian_base"
 	}
 ],
 "containers": [
