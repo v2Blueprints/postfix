@@ -4,21 +4,30 @@
 	"configuration": {
 	  "default_domain": "^^domain_name^^"
 	},
-"os_packages": [
-	{
-		"type": "debian",
-		"name": "postfix"
-	}
-],
-"images": [
-	{
-		"type": "lxd",
-		"image": "enginesd_debian_base"
-	}
-],
-"containers": [
-	{
-		"type": "lxd"
-	}
-]
+	"system_packages": {
+		"adds": [
+			"postfix"
+		]
+	},
+	"bindings": [
+    {
+      "type": "embed",
+      "runtimes": [
+        "lxd"
+      ],
+      "target": {
+        "repository": "https://github.com/v2Blueprints/enginesd_debian_base"
+      }
+    }
+  ],
+  "images": [
+    {
+      "runtimes": [
+        "docker"
+      ],
+      "target": {
+        "repository": "https://github.com/v2Blueprints/enginesd_debian_base"
+      }
+    }
+  ]
 }
