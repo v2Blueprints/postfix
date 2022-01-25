@@ -1,6 +1,8 @@
 {
-	"title": "postfix",
-	"description": "postfix base",
+	about {
+		"title": "postfix",
+		"explanation": "postfix base"		
+	},
 	"configuration": {
 	  "default_domain": "^^domain_name^^"
 	},
