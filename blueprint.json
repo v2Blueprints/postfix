@@ -1,5 +1,5 @@
 {
-	about {
+	"about": {
 		"title": "postfix",
 		"explanation": "postfix base"		
 	},
