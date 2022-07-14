@@ -4,32 +4,11 @@
 		"explanation": "postfix base"		
 	},
 	"configuration": {
-	  "default_domain": "^^domain_name^^"
+		"default_domain": "^^domain_name^^"
 	},
 	"system_packages": {
 		"adds": [
 			"postfix"
 		]
-	},
-	"bindings": [
-    {
-      "type": "embed",
-      "runtimes": [
-        "lxd"
-      ],
-      "target": {
-        "repository": "https://github.com/v2Blueprints/enginesd_debian_base"
-      }
-    }
-  ],
-  "images": [
-    {
-      "runtimes": [
-        "docker"
-      ],
-      "target": {
-        "repository": "https://github.com/v2Blueprints/enginesd_debian_base"
-      }
-    }
-  ]
+	}
 }
